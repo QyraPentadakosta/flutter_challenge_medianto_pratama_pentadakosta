@@ -1,0 +1,41 @@
+name: flutter_challenge_medianto_pratama_pentadakosta
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  get: 4.6.1
+  google_fonts: 2.1.0
+
+dev_dependencies:
+  flutter_lints: ^1.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+  fonts:
+    - family: Hubballi
+      fonts:
+        - asset: font/Hubballi/Hubballi-Regular.ttf
+    - family: Roboto
+      fonts:
+        - asset: font/Roboto/Roboto-Regular.ttf
+        - asset: font/Roboto/Roboto-Black.ttf
+        - asset: font/Roboto/Roboto-BlackItalic.ttf
+        - asset: font/Roboto/Roboto-Bold.ttf
+        - asset: font/Roboto/Roboto-BoldItalic.ttf
+        - asset: font/Roboto/Roboto-Italic.ttf
+        - asset: font/Roboto/Roboto-Light.ttf
+        - asset: font/Roboto/Roboto-LightItalic.ttf
+        - asset: font/Roboto/Roboto-Medium.ttf
+        - asset: font/Roboto/Roboto-MediumItalic.ttf
+        - asset: font/Roboto/Roboto-Thin.ttf
+        - asset: font/Roboto/Roboto-ThinItalic.ttf
