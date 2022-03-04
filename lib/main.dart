@@ -1,3 +1,8 @@
+/* 
+create by : Medianto Pratama Pentadakosta
+created_at : 4 Maret 2022
+*/
+
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
