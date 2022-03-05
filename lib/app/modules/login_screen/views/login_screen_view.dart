@@ -4,6 +4,7 @@ import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_challenge_medianto_pratama_pentadakosta/assets/colors.dart';
+import 'package:flutter_ringtone_player/flutter_ringtone_player.dart';
 
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -177,6 +178,7 @@ class LoginScreenView extends GetView<LoginScreenController> {
                                       uid.text,
                                       password.text,
                                     );
+                                    FlutterRingtonePlayer.playNotification();
                                   },
                                   child: Padding(
                                     padding: const EdgeInsets.all(15.0),
