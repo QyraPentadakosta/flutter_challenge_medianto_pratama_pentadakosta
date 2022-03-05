@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_challenge_medianto_pratama_pentadakosta/assets/colors.dart';
 
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -99,8 +100,7 @@ class LoginScreenView extends GetView<LoginScreenController> {
                                         decoration: InputDecoration(
                                           hintText: 'User ID',
                                           hintStyle: TextStyle(
-                                            color:
-                                                Colors.black.withOpacity(0.5),
+                                            color: black.withOpacity(0.5),
                                             fontSize: 15.0,
                                             fontStyle: FontStyle.italic,
                                             fontFamily: 'Hubballi',
@@ -141,7 +141,7 @@ class LoginScreenView extends GetView<LoginScreenController> {
                                                     ? 'show'
                                                     : 'hide',
                                                 style: TextStyle(
-                                                  color: Color(0xFF6600cc),
+                                                  color: primary,
                                                 ),
                                               ),
                                             ),
@@ -165,7 +165,7 @@ class LoginScreenView extends GetView<LoginScreenController> {
                                 width: Get.width * 0.4,
                                 child: OutlinedButton(
                                   style: OutlinedButton.styleFrom(
-                                    backgroundColor: Color(0xFF6600cc),
+                                    backgroundColor: primary,
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.all(
                                         Radius.circular(50),
@@ -183,7 +183,7 @@ class LoginScreenView extends GetView<LoginScreenController> {
                                     child: Text(
                                       'LOGIN',
                                       style: GoogleFonts.roboto(
-                                        color: Colors.white,
+                                        color: white,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
@@ -208,9 +208,8 @@ class LoginScreenView extends GetView<LoginScreenController> {
                                       Text(
                                         " Sign Up",
                                         style: GoogleFonts.lato(
-                                          // letterSpacing: 1,
                                           fontWeight: FontWeight.w700,
-                                          color: Colors.red,
+                                          color: red,
                                         ),
                                       ),
                                     ],

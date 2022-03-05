@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_challenge_medianto_pratama_pentadakosta/assets/colors.dart';
+import 'package:flutter_challenge_medianto_pratama_pentadakosta/assets/dialog_custom.dart';
 import 'package:get/get.dart';
 
 class LoginScreenController extends GetxController {
@@ -15,42 +17,19 @@ class LoginScreenController extends GetxController {
   }
 
   void cekLogin(uid, password) {
-    print(uid);
     if (uid != '' && password != '') {
-      Get.defaultDialog(
-        title: 'Berhasil',
-        titleStyle: TextStyle(color: Colors.green),
-        middleText: 'Berhasil Login',
-        cancel: TextButton(
-          style: TextButton.styleFrom(
-            backgroundColor: Colors.green,
-          ),
-          onPressed: () {
-            Get.back();
-          },
-          child: Text(
-            'OK',
-            style: TextStyle(color: Colors.white),
-          ),
-        ),
-      );
+      if (uid.length <= 4 || password.length <= 5) {
+        Get.dialog(
+          dialogCustom('gagal', 'User ID dan atau Password \n terlalu pendek'),
+        );
+      } else {
+        Get.dialog(
+          dialogCustom('berhasil', 'Berhasil Login'),
+        );
+      }
     } else {
-      Get.defaultDialog(
-        title: 'Gagal',
-        titleStyle: TextStyle(color: Colors.red),
-        middleText: 'User ID dan atau Password \n anda belum diisi',
-        cancel: TextButton(
-          style: TextButton.styleFrom(
-            backgroundColor: Colors.red,
-          ),
-          onPressed: () {
-            Get.back();
-          },
-          child: Text(
-            'OK',
-            style: TextStyle(color: Colors.white),
-          ),
-        ),
+      Get.dialog(
+        dialogCustom('gagal', 'User ID dan atau Password \n anda belum diisi'),
       );
     }
   }
